@@ -64,7 +64,7 @@ const handleCellSelect = (index) => {
 const startGame = () => {
   errors.value = [];
   corrects.value = [];
-  axios.get("http://sudoku.test/problems/random").then((res) => {
+  axios.get("https://mighty-meadow-02197.herokuapp.com/problems/random").then((res) => {
     problem.value = res.data.schema.split("");
     solution.value = res.data.solution.split("");
     play.value = true;
